@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function Todo(props) {
     return(
         <li className="todo stack-small">
@@ -17,5 +19,11 @@ function Todo(props) {
         </div>
       </li>
     )
+}
+
+Todo.propTypes = {
+  id: PropTypes.string,
+  completed: PropTypes.bool,
+  name: PropTypes.string,
 }
 export default Todo;
